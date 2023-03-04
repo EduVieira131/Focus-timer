@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/stopwatch.svg"
+      type="image/x-icon"
+    />
+
+    <script src="./js/index.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="timer">
+        <span class="minutes">25</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+      </div>
+      <div id="controls">
+        <button class="play"><img src="./assets/playButton.svg" /></button>
+        <button class="pause hide">
+          <img src="./assets/pauseButton.svg" />
+        </button>
+        <button class="stop hide"><img src="./assets/stopButton.svg" /></button>
+        <button class="set"><img src="./assets/stopwatch.svg" /></button>
+      </div>
+    </div>
+
+    <div class="notes-wrapper">
+      <textarea
+      id="notes"
+      cols="50"
+      rows="60"
+      placeholder="Bloco de anotações"
+    ></textarea>
+    </div>
+
+    <footer>
+      <button class="sound-on hide"><img src="./assets/volumeMedium.svg" /></button>
+      <button class="sound-off">
+        <img src="./assets/volumeMute.svg" />
+      </button>
+    </footer>
+  </body>
+</html>
